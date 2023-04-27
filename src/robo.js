@@ -46,15 +46,28 @@ var len = (el) => {
                     }else{
                         as[casa - i] = resultados[tamanho - i].color
                     }
-                }
+                    let aaa = ".n"+i
+                    let ccc = ""
+                    
+                    
+                    if(resultados[tamanho - i].color == 1){
+                        ccc = "red"
+                    }else if(resultados[tamanho - i].color == 2){
+                        ccc = "black"
+                    }else{
+                        ccc = "white"
+                    }
 
-                console.log(as)
+                    len(aaa).style.backgroundColor = ccc
+                    len(aaa).innerHTML = resultados[tamanho - i].roll
+                }
 
                 let maisChamados = verificaChamados(p, v)
                 verificaAssertividade(maisChamados)
 
                 var t = "TOTAL VERMELHOS: " + v + " | TOTAL PRETOS: " + p + " | TOTAL BRANCOS: " + b
-                len('.ultimo').innerHTML = "[ ULTIMO NUMERO: " + ult_num + " " + ult_cor + " ] --- ( " + t + " ) "
+               // len('.ultimo').innerHTML = "[ ULTIMO NUMERO: " + ult_num + " " + ult_cor + " ] --- ( " + t + " ) "
+
             }
         )
         setTimeout(() => { startRobo() }, 3000)
