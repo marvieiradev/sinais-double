@@ -46,20 +46,20 @@ var len = (el) => {
                     }else{
                         as[casa - i] = resultados[tamanho - i].color
                     }
-                    let aaa = ".n"+i
-                    let ccc = ""
+                    let num_cham = ".n"+i
+                    let cor_num_cham = ""
                     
                     
                     if(resultados[tamanho - i].color == 1){
-                        ccc = "red"
+                        cor_num_cham = "#FF2449"
                     }else if(resultados[tamanho - i].color == 2){
-                        ccc = "black"
+                        cor_num_cham = "#262F3C"
                     }else{
-                        ccc = "white"
+                        cor_num_cham = "#FFFFFF"
                     }
 
-                    len(aaa).style.backgroundColor = ccc
-                    len(aaa).innerHTML = resultados[tamanho - i].roll
+                    len(num_cham).style.backgroundColor = cor_num_cham
+                    len(num_cham).innerHTML = resultados[tamanho - i].roll
                 }
 
                 let maisChamados = verificaChamados(p, v)
