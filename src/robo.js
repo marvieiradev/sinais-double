@@ -1,11 +1,13 @@
 const url = "https://api2.minhablaze.com.br/api/v1/result/double"
 
 var sum = 0; var seq = 0; var as = []
+var frase = ""
 var frases = [
-    "teste 1",
-    "teste 4",
-    "teste 3",
-    "teste 4",
+    "Frase qualquer 1",
+    "Frase qualquer 2",
+    "Frase qualquer 3",
+    "Frase qualquer 4",
+    "Frase qualquer 5",
 ]
 
 var len = (el) => {
@@ -44,20 +46,20 @@ var len = (el) => {
                         b++
                     }
 
-                    if(resultados[tamanho - i].color == 0){
-                        as[casa - i] = resultados[tamanho - i-1].color
-                    }else{
+                    if (resultados[tamanho - i].color == 0) {
+                        as[casa - i] = resultados[tamanho - i - 1].color
+                    } else {
                         as[casa - i] = resultados[tamanho - i].color
                     }
-                    let num_cham = ".n"+i
+                    let num_cham = ".n" + i
                     let cor_num_cham = ""
-                    
-                    
-                    if(resultados[tamanho - i].color == 1){
+
+
+                    if (resultados[tamanho - i].color == 1) {
                         cor_num_cham = "#FF2449"
-                    }else if(resultados[tamanho - i].color == 2){
+                    } else if (resultados[tamanho - i].color == 2) {
                         cor_num_cham = "#262F3C"
-                    }else{
+                    } else {
                         cor_num_cham = "#FFFFFF"
                     }
 
@@ -67,6 +69,7 @@ var len = (el) => {
 
                 let maisChamados = verificaChamados(p, v)
                 verificaAssertividade(maisChamados)
+                len('.frase').innerHTML = frase                
 
             }
         )
@@ -74,6 +77,12 @@ var len = (el) => {
     }
 
 startRobo()
+
+function exibirFrase() {
+    frase = frases[Math.floor(Math.random() * 5)]
+    setTimeout(() => { exibirFrase() }, 10000)
+}
+
 exibirFrase()
 
 function mostraCor(cor) {
@@ -122,7 +131,7 @@ function verificaChamados(p, v) {
             }
         }
         sum = y
-    }else{
+    } else {
         y = 0
         sum = y
     }
@@ -149,18 +158,18 @@ function verificaAssertividade(soma) {
     }
 
     if (chanceP > chanceV) {
-        sugestao = "SUGESTÃO PARA: "+ mostraCor(2)
-        if(chanceP >=75 && chanceP >80){
-            sugestao = "GRANDE CHANCE DE VIR "+ mostraCor(2)
-        }else if(chanceP >=80){
-            sugestao = mostraCor(2)+" CONFIRMADO!"
+        sugestao = "SUGESTÃO PARA: " + mostraCor(2)
+        if (chanceP >= 75 && chanceP < 80) {
+            sugestao = "GRANDE CHANCE DE VIR " + mostraCor(2)
+        } else if (chanceP >= 80) {
+            sugestao = mostraCor(2) + " CONFIRMADO!"
         }
     } else if (chanceV > chanceP) {
-        sugestao = "SUGESTÃO PARA: "+ mostraCor(1)
-        if(chanceV >=75 && chanceV >80){
-            sugestao = "GRANDE CHANCE DE VIR "+ mostraCor(1)
-        }else if(chanceV >=80){
-            sugestao = mostraCor(1)+" CONFIRMADO!"
+        sugestao = "SUGESTÃO PARA: " + mostraCor(1)
+        if (chanceV >= 75 && chanceV < 80) {
+            sugestao = "GRANDE CHANCE DE VIR " + mostraCor(1)
+        } else if (chanceV >= 80) {
+            sugestao = mostraCor(1) + " CONFIRMADO!"
         }
     }
     len('.sugestao').innerHTML = "" + sugestao
@@ -195,6 +204,3 @@ function verificaSequencia() {
     return y
 }
 
-function exibirFrase(){
-    console.log(frases[0])
-} setTimeout(() => { exibirFrase() }, 5000)
