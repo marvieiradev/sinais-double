@@ -1,9 +1,12 @@
 const url = "https://api2.minhablaze.com.br/api/v1/result/double"
 
 var sum = 0; var seq = 0; var as = []
-
-let win_primeira = 0; let win_gale1 = 0; let win_gale2 = 0; let loss = 0
-let gale = 0
+var frases = [
+    "teste 1",
+    "teste 4",
+    "teste 3",
+    "teste 4",
+]
 
 var len = (el) => {
     return document.querySelector(el)
@@ -65,15 +68,13 @@ var len = (el) => {
                 let maisChamados = verificaChamados(p, v)
                 verificaAssertividade(maisChamados)
 
-                var t = "TOTAL VERMELHOS: " + v + " | TOTAL PRETOS: " + p + " | TOTAL BRANCOS: " + b
-               // len('.ultimo').innerHTML = "[ ULTIMO NUMERO: " + ult_num + " " + ult_cor + " ] --- ( " + t + " ) "
-
             }
         )
         setTimeout(() => { startRobo() }, 3000)
     }
 
 startRobo()
+exibirFrase()
 
 function mostraCor(cor) {
     switch (cor) {
@@ -194,6 +195,6 @@ function verificaSequencia() {
     return y
 }
 
-function teste(){
-    
-}
+function exibirFrase(){
+    console.log(frases[0])
+} setTimeout(() => { exibirFrase() }, 5000)
