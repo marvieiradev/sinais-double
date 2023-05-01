@@ -193,3 +193,7 @@ function verificaSequencia() {
     seq = x
     return y
 }
+
+function teste(){
+    
+}
