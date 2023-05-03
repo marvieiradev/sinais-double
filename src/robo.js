@@ -3,11 +3,11 @@ const url = "https://api2.minhablaze.com.br/api/v1/result/double"
 var sum = 0; var seq = 0; var as = []
 var frase = ""
 var frases = [
-    "Frase qualquer 1",
-    "Frase qualquer 2",
-    "Frase qualquer 3",
-    "Frase qualquer 4",
-    "Frase qualquer 5",
+    "APOSTE</b> na COR</b> acima de <b>77%</b>. <br>Faça G1 & G2</b> se Precisar.",
+    "Seja Lucrativa(o)</b> com Paciência</b> <br>e Análise das Informações</b>!",
+    "Entrar Após o LOSS</b> é Uma Excelente <br>Estratégia</b> nos Sinais",
+    "Sempre Considere Fazer Gales 1 e 2 <br>Respeitando as Porcentágens.</b>",
+    "Ferramenta de Suporte a entradas e Sinais.</b> <br>Alie a Sua <b>Estratégia!</b>",
 ]
 
 var len = (el) => {
@@ -191,9 +191,12 @@ function verificaSequencia() {
                 if (ac[0] == ac[1] && ac[1] == ac[2] && ac[2] == ac[3] && ac[3] == ac[4]) {
                     x = x + 2
                     if (ac[0] == ac[1] && ac[1] == ac[2] && ac[2] == ac[3] && ac[3] == ac[4] && ac[4] == ac[5]) {
-                        x = x + 1
+                        x = x + 2
                         if (ac[0] == ac[1] && ac[1] == ac[2] && ac[2] == ac[3] && ac[3] == ac[4] && ac[4] == ac[5] && ac[5] == ac[6]) {
                             x = x + 1
+                            if (ac[0] == ac[1] && ac[1] == ac[2] && ac[2] == ac[3] && ac[3] == ac[4] && ac[4] == ac[5] && ac[5] == ac[6] && ac[6] == ac[7]) {
+                                x = x + 1
+                            }
                         }
                     }
                 }
