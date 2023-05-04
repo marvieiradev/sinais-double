@@ -5,18 +5,18 @@ export function App() {
   return (
     <>
       <div className="container flex flex-row bg-dark">
-        <section className="container flex bg-dark border-r-2 border-white justify-center max-w-[300px]">
+        <section className="container flex bg-dark border-r-2 border-white justify-center max-w-[320px]">
           <div>
             <div className="justify-center items-center m-3">
               <img src="src/assets/logo.svg" className="w-[250px]" />
             </div>
-            <div className="sugestao text-lg text-white text-center m-2">Teste</div>
+            <div className="sugestao text-lg text-white text-center mb-4 mt-4">AGUARDANDO SINAIS...</div>
             <div className="flex flex-row justify-center items-center space-x-6">
-              <div className="preto bg-black text-lg text-white text-center w-[120px] rounded-md border-2">A</div>
-              <div className="vermelho bg-red text-lg text-white text-center w-[120px] rounded-md border-2">B</div>
+              <div className="preto bg-black text-lg text-white text-center w-[120px] rounded-md border-2">0%</div>
+              <div className="vermelho bg-red text-lg text-white text-center w-[120px] rounded-md border-2">0%</div>
             </div>
 
-            <div className="frase text-md text-white text-center m-3">Frase</div>
+            <div className="frase text-md text-white text-center mb-4 mt-4">FRASE</div>
 
             <div className="border-2 rounded-lg border-white mt-5 m-2">
               <div className="ultimo text-lg text-white text-center mb-5 mt-2">ULTIMOS RESULTADOS:</div>
@@ -45,9 +45,6 @@ export function App() {
               </div>
 
             </div>
-
-
-
 
           </div>
         </section>

@@ -69,7 +69,7 @@ var len = (el) => {
 
                 let maisChamados = verificaChamados(p, v)
                 verificaAssertividade(maisChamados)
-                len('.frase').innerHTML = frase                
+                len('.frase').innerHTML = frase
 
             }
         )
@@ -158,21 +158,23 @@ function verificaAssertividade(soma) {
     }
 
     if (chanceP > chanceV) {
-        sugestao = "SUGESTÃO PARA: " + mostraCor(2)
+        sugestao = "SUGESTÃO PARA: <b>" + mostraCor(2) + "</b>"
         if (chanceP >= 75 && chanceP < 80) {
-            sugestao = "GRANDE CHANCE DE VIR " + mostraCor(2)
+            sugestao = "GRANDE CHANCE DE VIR <b>" + mostraCor(2) + "</b>"
         } else if (chanceP >= 80) {
-            sugestao = mostraCor(2) + " CONFIRMADO!"
+            sugestao = "<b>" + mostraCor(2) + "</b> CONFIRMADO!"
         }
     } else if (chanceV > chanceP) {
-        sugestao = "SUGESTÃO PARA: " + mostraCor(1)
+        sugestao = "SUGESTÃO PARA: <b>" + mostraCor(1) + "</b>"
         if (chanceV >= 75 && chanceV < 80) {
-            sugestao = "GRANDE CHANCE DE VIR " + mostraCor(1)
+            sugestao = "GRANDE CHANCE DE VIR  <b>" + mostraCor(1) + "</b>"
         } else if (chanceV >= 80) {
-            sugestao = mostraCor(1) + " CONFIRMADO!"
+            sugestao = "<b>" + mostraCor(1) + "</b> CONFIRMADO!"
         }
     }
-    len('.sugestao').innerHTML = "" + sugestao
+    if(sugestao != null){
+        len('.sugestao').innerHTML = "" + sugestao
+    }
     len('.preto').innerHTML = chanceP + "%"
     len('.vermelho').innerHTML = chanceV + "%"
 }
