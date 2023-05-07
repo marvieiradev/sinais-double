@@ -156,7 +156,6 @@ function verificaAssertividade(soma) {
             chanceV = chanceV + soma; chanceP = 100 - chanceV
         }
     }
-    /////
 
     if (chanceP > chanceV) {
         sugestao = "SUGESTÃO PARA: <b>" + mostraCor(2) + "</b>"
