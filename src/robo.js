@@ -54,7 +54,7 @@ var len = (el) => {
                     let num_cham = ".n" + i
                     let cor_num_cham = ""
 
-
+                    //Preencher as cores
                     if (resultados[tamanho - i].color == 1) {
                         cor_num_cham = "#FF2449"
                     } else if (resultados[tamanho - i].color == 2) {
