@@ -16,7 +16,7 @@ export function App() {
               <div className="vermelho bg-red text-lg text-white text-center w-[120px] rounded-md border-2">0%</div>
             </div>
 
-            <div className="frase text-md text-white text-center mb-4 mt-4">FRASE</div>
+            <div className="frase text-md text-white text-center mb-4 mt-4">[PLACEHOLDER]</div>
 
             <div className="border-2 rounded-lg border-white mt-5 m-2">
               <div className="ultimo text-lg text-white text-center mb-5 mt-2">ULTIMOS RESULTADOS:</div>
