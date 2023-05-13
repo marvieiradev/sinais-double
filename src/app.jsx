@@ -44,9 +44,21 @@ export function App() {
                 </div>
               </div>
 
+
+
+            </div>
+
+            <div className="border-2 rounded-lg border-white mt-5 m-2 flex flex-col items-center">
+              <h1 className="text-lg text-red mt-3">ATENÇÃO</h1>
+              <p className="text-white text-center text-md p-2">
+                Para o menor risco de perdas,
+                <br></br>
+                siga seu gerenciamento.
+              </p>
             </div>
 
           </div>
+
         </section>
         <section className="container flex flex-row justify-center items-center w-[100%]">
           <iframe width="95%" height="800" src="https://blaze.com/pt/games/double" ></iframe>
