@@ -8,7 +8,7 @@ export function App() {
         <section className="container flex bg-dark border-r-2 border-white justify-center max-w-[320px]">
           <div>
             <div className="justify-center items-center m-3">
-              <img src="src/assets/logo.svg" className="w-[250px]" />
+              <img src="../logo.svg" className="w-[250px]" />
             </div>
             <div className="sugestao text-lg text-white text-center mb-4 mt-4">AGUARDANDO SINAIS...</div>
             <div className="flex flex-row justify-center items-center space-x-6">
