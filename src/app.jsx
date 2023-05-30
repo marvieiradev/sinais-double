@@ -22,29 +22,27 @@ export function App() {
               <div className="ultimo text-lg text-white text-center mb-5 mt-2">ULTIMOS RESULTADOS:</div>
               <div className="ultimos-numeros flex flex-col justify-center">
                 <div className="line1 flex flex-row justify-center">
-                  <div className="n1 w-[35px] h-[35px] bg-white rounded-md m-1.5 text-xl text-white text-center"></div>
-                  <div className="n2 w-[35px] h-[35px] bg-white rounded-md m-1.5 text-xl text-white text-center"></div>
-                  <div className="n3 w-[35px] h-[35px] bg-white rounded-md m-1.5 text-xl text-white text-center"></div>
-                  <div className="n4 w-[35px] h-[35px] bg-white rounded-md m-1.5 text-xl text-white text-center"></div>
-                  <div className="n5 w-[35px] h-[35px] bg-white rounded-md m-1.5 text-xl text-white text-center"></div>
+                  <div className="n1 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
+                  <div className="n2 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
+                  <div className="n3 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
+                  <div className="n4 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
+                  <div className="n5 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
                 </div>
                 <div className="line1 flex flex-row justify-center">
-                  <div className="n6 w-[35px] h-[35px] bg-white rounded-md m-1.5 text-xl text-white text-center"></div>
-                  <div className="n7 w-[35px] h-[35px] bg-white rounded-md m-1.5 text-xl text-white text-center"></div>
-                  <div className="n8 w-[35px] h-[35px] bg-white rounded-md m-1.5 text-xl text-white text-center"></div>
-                  <div className="n9 w-[35px] h-[35px] bg-white rounded-md m-1.5 text-xl text-white text-center"></div>
-                  <div className="n10 w-[35px] h-[35px] bg-white rounded-md m-1.5 text-xl text-white text-center"></div>
+                  <div className="n6 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
+                  <div className="n7 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
+                  <div className="n8 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
+                  <div className="n9 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
+                  <div className="n10 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
                 </div>
                 <div className="line1 flex flex-row justify-center mb-2">
-                  <div className="n11 w-[35px] h-[35px] bg-white rounded-md m-1.5 text-xl text-white text-center"></div>
-                  <div className="n12 w-[35px] h-[35px] bg-white rounded-md m-1.5 text-xl text-white text-center"></div>
-                  <div className="n13 w-[35px] h-[35px] bg-white rounded-md m-1.5 text-xl text-white text-center"></div>
-                  <div className="n14 w-[35px] h-[35px] bg-white rounded-md m-1.5 text-xl text-white text-center"></div>
-                  <div className="n15 w-[35px] h-[35px] bg-white rounded-md m-1.5 text-xl text-white text-center"></div>
+                  <div className="n11 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
+                  <div className="n12 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
+                  <div className="n13 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
+                  <div className="n14 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
+                  <div className="n15 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
                 </div>
               </div>
-
-
 
             </div>
 
@@ -60,10 +58,9 @@ export function App() {
           </div>
 
         </section>
-        <section className="container flex flex-row justify-center items-center w-[100%]">
+        <section className="container flex flex-row justify-center items-center w-[100%]" >
           <iframe width="95%" height="800" src="https://blaze.com/pt/games/double" ></iframe>
         </section>
-
       </div>
 
     </>
