@@ -18,23 +18,7 @@ const ver  = (data) => {
     for (let i = 1; i <= numCount; i++) {
         console.log(data.results[i])
     }
-
-    
-
-    console.log("aaaaaaa")
-
-
-
 }
 
 fetchNums()
-
-/* ***********
- * *********** 
- * *********** 
- * *********** 
- * *********** 
- * *********** 
- * *********** 
- * ***********/
 
