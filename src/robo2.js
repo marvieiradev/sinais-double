@@ -39,4 +39,4 @@ function exibirFrase() {
     len('.frase').innerHTML = frase
 }
 
-//exibirFrase()
+//exibirFrase()///
