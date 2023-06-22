@@ -38,5 +38,3 @@ function exibirFrase() {
     //setTimeout(() => { exibirFrase() }, 10000)
     len('.frase').innerHTML = frase
 }
-
-//exibirFrase()///
