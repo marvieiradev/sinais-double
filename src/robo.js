@@ -1,4 +1,4 @@
-const url = "https://api2.minhablaze.com.br/api/v1/result/double"
+const url = "https://api.minhablaze.com.br/api/v1/result/double"
 
 var sum = 0; var seq = 0; var as = []
 var frase = ""
@@ -31,23 +31,23 @@ var len = (el) => {
                 let casa = 15
                 let tamanho = resultados.length
                 let indice = tamanho - casa
-                let cor = mostraCor(resultados[indice].color)
+                /*let cor = mostraCor(resultados[indice].color)
                 let corRef = resultados[indice].color
                 let ult_num = resultados[tamanho - 1].roll
-                let ult_cor = mostraCor(resultados[tamanho - 1].color);
+                let ult_cor = mostraCor(resultados[tamanho - 1].color);*/
 
                 var v = 0; var p = 0; var b = 0;
 
                 for (var i = 15; i > 0; i--) {
-                    if (resultados[tamanho - i].color == 1) {
+                    if (resultados[tamanho - i].color === 1) {
                         v++
-                    } else if (resultados[tamanho - i].color == 2) {
+                    } else if (resultados[tamanho - i].color === 2) {
                         p++
-                    } else if (resultados[tamanho - i].color == 0) {
+                    } else if (resultados[tamanho - i].color === 0) {
                         b++
                     }
 
-                    if (resultados[tamanho - i].color == 0) {
+                    if (resultados[tamanho - i].color === 0) {
                         as[casa - i] = resultados[tamanho - i - 1].color
                     } else {
                         as[casa - i] = resultados[tamanho - i].color
@@ -56,9 +56,9 @@ var len = (el) => {
                     let cor_num_cham = ""
 
                     //Preencher as cores
-                    if (resultados[tamanho - i].color == 1) {
+                    if (resultados[tamanho - i].color === 1) {
                         cor_num_cham = "#FF2449"
-                    } else if (resultados[tamanho - i].color == 2) {
+                    } else if (resultados[tamanho - i].color === 2) {
                         cor_num_cham = "#262F3C"
                     } else {
                         cor_num_cham = "#FFFFFF"
@@ -74,7 +74,7 @@ var len = (el) => {
 
             }
         )
-        setTimeout(() => { startRobo() }, 3000)
+        setTimeout(() => { startRobo() }, 1500)
     }
 
 startRobo()
