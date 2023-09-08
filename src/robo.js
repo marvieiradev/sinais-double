@@ -31,10 +31,10 @@ var len = (el) => {
                 let casa = 15
                 let tamanho = resultados.length
                 let indice = tamanho - casa
-                /*let cor = mostraCor(resultados[indice].color)
+                let cor = mostraCor(resultados[indice].color)
                 let corRef = resultados[indice].color
                 let ult_num = resultados[tamanho - 1].roll
-                let ult_cor = mostraCor(resultados[tamanho - 1].color);*/
+                let ult_cor = mostraCor(resultados[tamanho - 1].color);
 
                 var v = 0; var p = 0; var b = 0;
 
