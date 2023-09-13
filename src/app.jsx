@@ -59,7 +59,7 @@ export function App() {
 
         </section>
         <section className="container flex flex-row justify-center items-center w-[100%]" >
-          <iframe width="95%" height="800" src="https://blaze.com/pt/games/double" ></iframe>
+          <iframe width="95%" height="800" src="https://blaze-1.com/pt/games/double" ></iframe>
         </section>
       </div>
 
