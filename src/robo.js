@@ -161,26 +161,26 @@ function verificaAssertividade(soma) {
 
     if (chanceP > chanceV) {
         if (chanceP >= 61 && chanceP < 75) {
-            sugestao = "SUGESTÃO PARA: <b>" + mostraCor(2) + "</b>"
+            sugestao = `SUGESTÃO PARA: <b>${mostraCor(2)}</b>`
         } else if (chanceP >= 75 && chanceP < 80) {
-            sugestao = "GRANDE CHANCE DE VIR <b>" + mostraCor(2) + "</b>"
+            sugestao = `GRANDE CHANCE DE VIR <b>${mostraCor(2)}</b>`
         } else if (chanceP >= 80) {
-            sugestao = "<b>" + mostraCor(2) + "</b> CONFIRMADO!"
+            sugestao = `<b>${mostraCor(2)}</b> CONFIRMADO!`
         }
     } else if (chanceV > chanceP) {
         if (chanceV >= 61 && chanceV < 75) {
-            sugestao = "SUGESTÃO PARA: <b>" + mostraCor(1) + "</b>"
+            sugestao = `SUGESTÃO PARA: <b>${mostraCor(1)}</b>`
         } else if (chanceV >= 75 && chanceV < 80) {
-            sugestao = "GRANDE CHANCE DE VIR  <b>" + mostraCor(1) + "</b>"
+            sugestao = `GRANDE CHANCE DE VIR <b>${mostraCor(1)}</b>`
         } else if (chanceV >= 80) {
-            sugestao = "<b>" + mostraCor(1) + "</b> CONFIRMADO!"
+            sugestao = `<b>${mostraCor(1)}</b> CONFIRMADO!`
         }
     }
     if(sugestao != null){
-        len('.sugestao').innerHTML = "" + sugestao
+        len('.sugestao').innerHTML = `${sugestao}`
     }
-    len('.preto').innerHTML = chanceP + "%"
-    len('.vermelho').innerHTML = chanceV + "%"
+    len('.preto').innerHTML = `${chanceP}%`
+    len('.vermelho').innerHTML = `${chanceV}%`
 }
 
 function verificaSequencia() {
