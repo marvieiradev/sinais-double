@@ -21,21 +21,58 @@ export function App() {
               <div className="ultimos-numeros flex flex-col justify-center mb-5">
 
                 <div className="line1 flex flex-row justify-center">
-                  <div className="n1 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
-                  <div className="n2 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
-                  <div className="n3 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
-                  <div className="n4 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
-                  <div className="n5 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
+                  <div className="items-center justify-center flex flex-col">
+                    <div className="n10 w-[35px] h-[35px] bg-grey rounded-md mx-1.5 text-xl text-white text-center"></div>
+                    <p className="h10 text-white text-sm">00:00</p>
+                  </div>
+
+                  <div className="items-center justify-center flex flex-col">
+                    <div className="n9 w-[35px] h-[35px] bg-grey rounded-md mx-1.5 text-xl text-white text-center"></div>
+                    <p className="h9 text-white text-sm">00:00</p>
+                  </div>
+
+                  <div className="items-center justify-center flex flex-col">
+                    <div className="n8 w-[35px] h-[35px] bg-grey rounded-md mx-1.5 text-xl text-white text-center"></div>
+                    <p className="h8 text-white text-sm">00:00</p>
+                  </div>
+
+                  <div className="items-center justify-center flex flex-col">
+                    <div className="n7 w-[35px] h-[35px] bg-grey rounded-md mx-1.5 text-xl text-white text-center"></div>
+                    <p className="h7 text-white text-sm">00:00</p>
+                  </div>
+
+                  <div className="items-center justify-center flex flex-col">
+                    <div className="n6 w-[35px] h-[35px] bg-grey rounded-md mx-1.5 text-xl text-white text-center"></div>
+                    <p className="h6 text-white text-sm">00:00</p>
+                  </div>
                 </div>
 
-                <div className="line1 flex flex-row justify-center">
-                  <div className="n6 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
-                  <div className="n7 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
-                  <div className="n8 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
-                  <div className="n9 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
-                  <div className="n10 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
-                </div>
+                <div className="line1 flex flex-row justify-center mt-4">
+                  <div className="items-center justify-center flex flex-col">
+                    <div className="n5 w-[35px] h-[35px] bg-grey rounded-md mx-1.5 text-xl text-white text-center"></div>
+                    <p className="h5 text-white text-sm">00:00</p>
+                  </div>
 
+                  <div className="items-center justify-center flex flex-col">
+                    <div className="n4 w-[35px] h-[35px] bg-grey rounded-md mx-1.5 text-xl text-white text-center"></div>
+                    <p className="h4 text-white text-sm">00:00</p>
+                  </div>
+
+                  <div className="items-center justify-center flex flex-col">
+                    <div className="n3 w-[35px] h-[35px] bg-grey rounded-md mx-1.5 text-xl text-white text-center"></div>
+                    <p className="h3 text-white text-sm">00:00</p>
+                  </div>
+
+                  <div className="items-center justify-center flex flex-col">
+                    <div className="n2 w-[35px] h-[35px] bg-grey rounded-md mx-1.5 text-xl text-white text-center"></div>
+                    <p className="h2 text-white text-sm">00:00</p>
+                  </div>
+
+                  <div className="items-center justify-center flex flex-col">
+                    <div className="n1 w-[35px] h-[35px] bg-grey rounded-md mx-1.5 text-xl text-white text-center"></div>
+                    <p className="h1 text-white text-sm">00:00</p>
+                  </div>
+                </div>
               </div>
 
             </div>

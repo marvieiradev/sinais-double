@@ -52,7 +52,10 @@ var len = (el) => {
                     } else {
                         as[casa - i] = resultados[tamanho - i].color
                     }
+
+                    const data = new Date(res.records[tamanho - i].created_at)
                     let num_cham = ".n" + i
+                    let hora_cham = ".h" + i
                     let cor_num_cham = ""
 
                     //Preencher as cores
@@ -66,6 +69,7 @@ var len = (el) => {
 
                     len(num_cham).style.backgroundColor = cor_num_cham
                     len(num_cham).innerHTML = resultados[tamanho - i].roll
+                    len(hora_cham).innerText = `${data.getHours().toString().padStart(2, '0')}:${data.getMinutes().toString().padStart(2, '0')}`;
                 }
 
                 let maisChamados = verificaChamados(p, v)
