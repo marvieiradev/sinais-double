@@ -1,4 +1,4 @@
-const url = "https://api.minhablaze.com.br/api/v1/result/double"
+const url = "https://blaze1.space/api/roulette_games/recent/history"
 
 var sum = 0; var seq = 0; var as = []
 var frase = ""
@@ -27,18 +27,18 @@ var len = (el) => {
         ).then(
             //Inicio das funções do robo
             (res) => {
-                let resultados = res.results
-                let casa = 15
+                let resultados = res.records
+                let casa = 10
                 let tamanho = resultados.length
                 let indice = tamanho - casa
-                let cor = mostraCor(resultados[indice].color)
-                let corRef = resultados[indice].color
-                let ult_num = resultados[tamanho - 1].roll
-                let ult_cor = mostraCor(resultados[tamanho - 1].color);
+                //let cor = mostraCor(resultados[indice].color)
+                //let corRef = resultados[indice].color
+                //let ult_num = resultados[tamanho - 1].roll
+                //let ult_cor = mostraCor(resultados[tamanho - 1].color);
 
                 var v = 0; var p = 0; var b = 0;
 
-                for (var i = 15; i > 0; i--) {
+                for (var i = 10; i > 0; i--) {
                     if (resultados[tamanho - i].color === 1) {
                         v++
                     } else if (resultados[tamanho - i].color === 2) {
@@ -176,7 +176,7 @@ function verificaAssertividade(soma) {
             sugestao = `<b>${mostraCor(1)}</b> CONFIRMADO!`
         }
     }
-    if(sugestao != null){
+    if (sugestao != null) {
         len('.sugestao').innerHTML = `${sugestao}`
     }
     len('.preto').innerHTML = `${chanceP}%`
@@ -212,4 +212,3 @@ function verificaSequencia() {
     seq = x
     return y
 }
-

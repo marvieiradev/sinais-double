@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 export function App() {
 
   return (
@@ -20,7 +18,8 @@ export function App() {
 
             <div className="border-2 rounded-lg border-white mt-5 m-2">
               <div className="ultimo text-lg text-white text-center mb-5 mt-2">ULTIMOS RESULTADOS:</div>
-              <div className="ultimos-numeros flex flex-col justify-center">
+              <div className="ultimos-numeros flex flex-col justify-center mb-5">
+
                 <div className="line1 flex flex-row justify-center">
                   <div className="n1 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
                   <div className="n2 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
@@ -28,6 +27,7 @@ export function App() {
                   <div className="n4 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
                   <div className="n5 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
                 </div>
+
                 <div className="line1 flex flex-row justify-center">
                   <div className="n6 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
                   <div className="n7 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
@@ -35,13 +35,7 @@ export function App() {
                   <div className="n9 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
                   <div className="n10 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
                 </div>
-                <div className="line1 flex flex-row justify-center mb-2">
-                  <div className="n11 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
-                  <div className="n12 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
-                  <div className="n13 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
-                  <div className="n14 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
-                  <div className="n15 w-[35px] h-[35px] bg-grey rounded-md m-1.5 text-xl text-white text-center"></div>
-                </div>
+
               </div>
 
             </div>
@@ -59,7 +53,7 @@ export function App() {
 
         </section>
         <section className="container flex flex-row justify-center items-center w-[100%]" >
-          <iframe width="95%" height="800" src="https://blaze-1.com/pt/games/double" ></iframe>
+          <iframe width="95%" height="800" src="https://blaze1.space/pt/games/double" ></iframe>
         </section>
       </div>
 
