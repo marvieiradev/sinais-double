@@ -20,7 +20,7 @@ export function App() {
               <div className="ultimo text-lg text-white text-center mb-5 mt-2">ULTIMOS RESULTADOS:</div>
               <div className="ultimos-numeros flex flex-col justify-center mb-5">
 
-                <div className="line1 flex flex-row justify-center">
+                <div className="line flex flex-row justify-center">
                   <div className="items-center justify-center flex flex-col">
                     <div className="n10 w-[35px] h-[35px] bg-dark rounded-md mx-1.5 text-xl text-white text-center"></div>
                     <p className="h10 text-white text-sm"></p>
@@ -47,7 +47,7 @@ export function App() {
                   </div>
                 </div>
 
-                <div className="line1 flex flex-row justify-center mt-4">
+                <div className="line flex flex-row justify-center mt-4">
                   <div className="items-center justify-center flex flex-col">
                     <div className="n5 w-[35px] h-[35px] bg-dark rounded-md mx-1.5 text-xl text-white text-center"></div>
                     <p className="h5 text-white text-sm"></p>
@@ -87,8 +87,8 @@ export function App() {
           </div>
 
         </section>
-        <section className="container flex flex-row justify-center items-center w-[100%] hidden md:flex" >
-          <iframe width="95%" height="800" src="https://blaze1.space/pt/games/double" ></iframe>
+        <section className="container flex flex-row justify-center items-center w-[100%] hidden md:flex" id="game">
+          <iframe width="95%" height="800" src="https://blaze1.space/pt/games/double"></iframe>
         </section>
       </div>
 
