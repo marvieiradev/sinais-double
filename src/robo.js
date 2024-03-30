@@ -1,14 +1,14 @@
 const url = "https://blaze1.space/api/roulette_games/recent/history"
-
 var sum = 0; var seq = 0; var as = []
 var frase = ""
+
 var frases = [
     "APOSTE</b> na COR</b> acima de <b>77%</b>. <br>Faça G1 & G2</b> se precisar.",
     "Seja lucrativa(o)</b> com paciência</b> <br>e análise das informações</b>!",
     "Entrar após o <b>LOSS</b> é uma excelente <br>estratégia</b> nos sinais",
     "Sempre considere fazer <b>GALES 1 e 2</b> <br>respeitando as porcentagens.</b>",
     "Ferramenta de suporte a entradas e sinais. <br>Alie a sua <b>estratégia!</b>",
-]
+];
 
 var len = (el) => {
     return document.querySelector(el)
@@ -43,11 +43,13 @@ var len = (el) => {
                         b++
                     }
 
-                    if (resultados[tamanho - i].color === 0) {
+                    /*if (resultados[tamanho - i].color === 0) {
                         as[casa - i] = resultados[tamanho - i - 1].color
                     } else {
                         as[casa - i] = resultados[tamanho - i].color
-                    }
+                    }*/
+
+                    as[casa - i] = resultados[tamanho - i].color
 
                     const data = new Date(res.records[tamanho - i].created_at)
                     let num_cham = ".n" + i
@@ -161,19 +163,19 @@ function verificaAssertividade(soma) {
 
     if (chanceP > chanceV) {
         if (chanceP >= 61 && chanceP < 75) {
-            sugestao = `SUGESTÃO PARA: <b>${mostraCor(2)}</b>`
+            sugestao = `SUGESTÃO PARA: <strong>${mostraCor(2)}</strong>`
         } else if (chanceP >= 75 && chanceP < 80) {
-            sugestao = `ALTA CHANCE DE: <b>${mostraCor(2)}</b>`
+            sugestao = `ALTA CHANCE DE: <strong>${mostraCor(2)}</strong>`
         } else if (chanceP >= 80) {
-            sugestao = `<b>${mostraCor(2)}</b> CONFIRMADO!`
+            sugestao = `<strong>${mostraCor(2)}</strong> CONFIRMADO!`
         }
     } else if (chanceV > chanceP) {
         if (chanceV >= 61 && chanceV < 75) {
-            sugestao = `SUGESTÃO PARA: <b>${mostraCor(1)}</b>`
+            sugestao = `SUGESTÃO PARA: <strong>${mostraCor(1)}</strong>`
         } else if (chanceV >= 75 && chanceV < 80) {
-            sugestao = `ALTA CHANCE DE: <b>${mostraCor(1)}</b>`
+            sugestao = `ALTA CHANCE DE: <strong>${mostraCor(1)}</strong>`
         } else if (chanceV >= 80) {
-            sugestao = `<b>${mostraCor(1)}</b> CONFIRMADO!`
+            sugestao = `<strong>${mostraCor(1)}</strong> CONFIRMADO!`
         }
     }
     if (sugestao != null) {
