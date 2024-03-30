@@ -3,11 +3,11 @@ const url = "https://blaze1.space/api/roulette_games/recent/history"
 var sum = 0; var seq = 0; var as = []
 var frase = ""
 var frases = [
-    "APOSTE</b> na COR</b> acima de <b>77%</b>. <br>Faça G1 & G2</b> se Precisar.",
-    "Seja Lucrativa(o)</b> com Paciência</b> <br>e Análise das Informações</b>!",
-    "Entrar Após o LOSS</b> é Uma Excelente <br>Estratégia</b> nos Sinais",
-    "Sempre Considere Fazer Gales 1 e 2 <br>Respeitando as Porcentágens.</b>",
-    "Ferramenta de Suporte a entradas e Sinais.</b> <br>Alie a Sua <b>Estratégia!</b>",
+    "APOSTE</b> na COR</b> acima de <b>77%</b>. <br>Faça G1 & G2</b> se precisar.",
+    "Seja lucrativa(o)</b> com paciência</b> <br>e análise das informações</b>!",
+    "Entrar após o <b>LOSS</b> é uma excelente <br>estratégia</b> nos sinais",
+    "Sempre considere fazer <b>GALES 1 e 2</b> <br>respeitando as porcentagens.</b>",
+    "Ferramenta de suporte a entradas e sinais. <br>Alie a sua <b>estratégia!</b>",
 ]
 
 var len = (el) => {
@@ -31,10 +31,6 @@ var len = (el) => {
                 let casa = 10
                 let tamanho = resultados.length
                 let indice = tamanho - casa
-                //let cor = mostraCor(resultados[indice].color)
-                //let corRef = resultados[indice].color
-                //let ult_num = resultados[tamanho - 1].roll
-                //let ult_cor = mostraCor(resultados[tamanho - 1].color);
 
                 var v = 0; var p = 0; var b = 0;
 
@@ -81,7 +77,7 @@ var len = (el) => {
         setTimeout(() => { startRobo() }, 1500)
     }
 
-startRobo()
+startRobo();
 
 function exibirFrase() {
     frase = frases[Math.floor(Math.random() * 5)]
@@ -108,13 +104,13 @@ function verificaChamados(p, v) {
     let x = 0; let y = 0
     if (v < p) {
         x = 1; y = 6
-        if (p >= 10) {
+        if (p >= 6) {
             y = 11
-            if (p >= 11) {
+            if (p >= 7) {
                 y = 16
-                if (p >= 12) {
+                if (p >= 8) {
                     y = 21
-                    if (p >= 13) {
+                    if (p >= 9) {
                         y = 26
                     }
                 }
@@ -123,13 +119,13 @@ function verificaChamados(p, v) {
         sum = y
     } else if (p < v) {
         x = 2; y = 6
-        if (v >= 10) {
+        if (v >= 6) {
             y = 11
-            if (v >= 11) {
+            if (v >= 7) {
                 y = 16
-                if (v >= 12) {
+                if (v >= 8) {
                     y = 21
-                    if (v >= 13) {
+                    if (v >= 9) {
                         y = 26
                     }
                 }
@@ -167,7 +163,7 @@ function verificaAssertividade(soma) {
         if (chanceP >= 61 && chanceP < 75) {
             sugestao = `SUGESTÃO PARA: <b>${mostraCor(2)}</b>`
         } else if (chanceP >= 75 && chanceP < 80) {
-            sugestao = `GRANDE CHANCE DE VIR <b>${mostraCor(2)}</b>`
+            sugestao = `ALTA CHANCE DE: <b>${mostraCor(2)}</b>`
         } else if (chanceP >= 80) {
             sugestao = `<b>${mostraCor(2)}</b> CONFIRMADO!`
         }
@@ -175,7 +171,7 @@ function verificaAssertividade(soma) {
         if (chanceV >= 61 && chanceV < 75) {
             sugestao = `SUGESTÃO PARA: <b>${mostraCor(1)}</b>`
         } else if (chanceV >= 75 && chanceV < 80) {
-            sugestao = `GRANDE CHANCE DE VIR <b>${mostraCor(1)}</b>`
+            sugestao = `ALTA CHANCE DE: <b>${mostraCor(1)}</b>`
         } else if (chanceV >= 80) {
             sugestao = `<b>${mostraCor(1)}</b> CONFIRMADO!`
         }
@@ -188,7 +184,7 @@ function verificaAssertividade(soma) {
 }
 
 function verificaSequencia() {
-    let ac = as.reverse()
+    let ac = as
     let x = 0
     let y = ac[0]
 
