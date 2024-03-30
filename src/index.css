@@ -2,12 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   margin: 0px;
   padding: 0px;
 }
 
 body {
-    font-family: 'Dosis', sans-serif;
-    background-color: #0F1923;
-  }
+  font-family: 'Dosis', sans-serif;
+  background-color: #0F1923;
+}
+
+b {
+  color: yellow;
+}
