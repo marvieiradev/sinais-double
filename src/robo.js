@@ -20,7 +20,7 @@ var len = (el) => {
             url,
             {
                 method: "GET",
-                mode: "cors"
+                mode: "no-cors"
             }
         ).then(
             response => response.json()
